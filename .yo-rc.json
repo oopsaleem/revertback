@@ -48,6 +48,6 @@
     ],
     "herokuAppName": "revertback",
     "herokuDeployType": "git",
-    "herokuJavaVersion": "11"
+    "herokuJavaVersion": "14"
   }
 }
