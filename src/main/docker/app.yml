@@ -1,0 +1,15 @@
+version: '2'
+services:
+  revertback-app:
+    image: revertback
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - MICRONAUT_ENVIRONMENTS=prod
+      - JDBC_URL=jdbc:postgresql://revertback-postgresql:5432/revertback
+      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+    ports:
+      - 8080:8080
+  revertback-postgresql:
+    extends:
+      file: postgresql.yml
+      service: revertback-postgresql

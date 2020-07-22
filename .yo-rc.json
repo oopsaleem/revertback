@@ -1,0 +1,50 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.gelowb",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.1",
+    "applicationType": "monolith",
+    "baseName": "revertback",
+    "packageName": "com.gelowb",
+    "packageFolder": "com/gelowb",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "messageBroker": false,
+    "buildTool": "maven",
+    "jwtSecretKey": "MzJiYjQzYWJhZmE1ZDk1MjE3MjlkMDkxMmJjZTEwYjA2NDZhYmViNTFhNDA3ZTJlZmRjNTVlM2FmNTY5ZDIxMTE5OGFjMTM2ODM5MDA0ZDA2YTE1MGI0ZDRiMWQ2MjljNGM3YTFkNmM4ODYxZjMzOTdhNzNkMjNlZDA1YjQ3Yzk=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1595437448911,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-micronaut",
+        "version": "0.2.0"
+      }
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en"],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-micronaut",
+        "version": "0.2.0"
+      }
+    ]
+  }
+}
