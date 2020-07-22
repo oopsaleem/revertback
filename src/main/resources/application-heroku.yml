@@ -1,0 +1,29 @@
+# ===================================================================
+# Micronaut configuration for the "heroku" profile.
+#
+# This configuration overrides the application.yml file.
+# ===================================================================
+
+# ===================================================================
+# Standard Micronaut configuration properties.
+# Full reference is available at:
+# https://docs.micronaut.io/latest/guide/configurationreference.html
+# ===================================================================
+
+micronaut:
+  security:
+    token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: ${JWT_SECRET}
+
+datasources:
+  default:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: ${JDBC_DATABASE_URL}
+    username: ${JDBC_DATABASE_USERNAME}
+    password: ${JDBC_DATABASE_PASSWORD}
+    hikari:
+      maximum-pool-size: 8

@@ -45,6 +45,9 @@
         "name": "generator-jhipster-micronaut",
         "version": "0.2.0"
       }
-    ]
+    ],
+    "herokuAppName": "revertback",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "11"
   }
 }
